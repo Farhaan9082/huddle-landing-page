@@ -1,0 +1,25 @@
+.hero {
+    @extend %container;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    &__grid--left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1,p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__grid--right {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

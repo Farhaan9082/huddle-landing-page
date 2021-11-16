@@ -1,0 +1,32 @@
+%btn {
+    padding: 10px 45px;
+    border-radius: 500px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+
+.navbar__button {
+    @extend %btn;
+    background-color: $white;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: $Grayish-Blue;
+    }
+}
+
+.hero__button {
+    @extend %btn;
+    font-size: 0.8rem;
+    padding: 14px 50px;
+    background-color: $Pink;
+    color: $white;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: lighten($Pink, $amount: 15);
+    }
+}

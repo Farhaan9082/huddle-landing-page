@@ -1,0 +1,117 @@
+.footer {
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px 10px;
+    background-color: $Very-Dark-Cyan;
+
+    p {
+        color: $white;
+        width: 40ch;
+    }
+
+    &__logo {
+        width: 150px;
+        height: auto;
+        filter: brightness(0) invert(1);
+        margin-bottom: 25px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+
+        &--contact {
+            display: grid;
+            grid-template-columns: 5% 95%;
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+
+            img {
+                width: 14px;
+                padding-top: 5px;
+            }
+
+            p {
+                font-size: 0.8rem;
+                width: 45ch;
+            }
+        }
+
+        &--links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+
+            li {
+                margin-bottom: 15px;
+            }
+
+            a {
+                color: $white;
+                font-size: 0.9rem;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &--socials {
+            margin-left: 20%;
+
+            .socials_block {
+                display: flex;
+                width: 110px;
+                justify-content: space-between;
+            }
+
+            .socials {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+
+                &:hover {
+                    border: 1px solid $Pink;
+
+                    i {
+                        filter: none;
+                        color: $Pink;
+                    }
+                }
+            }
+
+            i {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    &__copy {
+        font-size: 0.8rem;
+        margin-top: 80px;
+    }
+
+    &__attribution {
+        margin-top: 40px;
+        color: $white;
+        font-size: 0.7rem;
+        align-self: center;
+
+        a {
+            color: $Pink;
+            font-size: 0.7rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
