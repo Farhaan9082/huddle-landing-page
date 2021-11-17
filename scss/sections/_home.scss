@@ -5,4 +5,8 @@
     background-size: cover;
     background-color: $Very-Pale-Cyan;
     padding-bottom: 30px;
+
+    @include respond-to(small) {
+        background-image: url(../images/bg-hero-mobile.svg);
+    }
 }

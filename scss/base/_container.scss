@@ -1,3 +1,7 @@
 %container {
     margin: 0 50px;
+
+    @include respond-to(small) {
+        margin: 0 20px;
+    }
 }

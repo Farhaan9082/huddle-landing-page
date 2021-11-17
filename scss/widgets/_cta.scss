@@ -12,5 +12,17 @@
 
     h2 {
         margin-bottom: 20px;
+        font-size: 1.4rem;
+    }
+
+    @include respond-to(small) {
+        padding: 40px 30px;
+    }
+
+    @include respond-to(very-small) {
+        h2 {
+            font-size: 1rem;
+        }
+        padding: 30px 30px;
     }
 }

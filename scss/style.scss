@@ -1,11 +1,15 @@
+//abtracts
 @import
-  './abstracts/variables';
+  './abstracts/variables',
+  './abstracts/mixins';
 
+//base
 @import
   './base/resets',
   './base/typography',
   './base/container';
 
+//sections
   @import
   './sections/navbar',
   './sections/hero',
@@ -13,6 +17,7 @@
   './sections/features',
   './sections/footer';
 
+//widgets
 @import
   './widgets/buttons',
   './widgets/card',
